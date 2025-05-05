@@ -39,3 +39,6 @@ An example run of this program would look like this: `python3 main.py e4 b2 f6` 
 
 
 This CLI will also place various runtime stats into `stats.txt`, including the actual tour path.
+
+### Note
+While this program can solve an empty board in ~64 recursive calls, adding obstructions to the board is very likely to increase processing time by a large amount. There is no defined "tour not found" state for an obstructed board and this will likely cause an unbound and unending search instead of returning no solution.
